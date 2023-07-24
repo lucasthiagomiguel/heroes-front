@@ -1,5 +1,5 @@
 <template>
-  <div class="d">
+  <div class="text-3xl font-bold underline">
     testando
   </div>
 </template>
