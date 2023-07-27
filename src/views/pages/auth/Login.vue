@@ -1,5 +1,5 @@
 <template>
-  <div class="w-full h-screen flex flex-col items-center justify-center px-6">
+  <div class="w-full h-screen flex flex-col items-center justify-center px-6 bg-[#146FE0]">
     <div class="flex flex-col items-center justify-center bg-white py-5 px-3 rounded">
       <div class="">
         <img src="@/assets/img/logo-login.png" alt="logo firtsDocy">

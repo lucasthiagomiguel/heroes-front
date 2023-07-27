@@ -3,12 +3,5 @@
 @tailwind components;
 @tailwind utilities;
 
-#app {
-  max-width: 1280px;
-  margin: 0 auto;
-  background: #146FE0;
-
-  font-weight: normal;
-}
 
 
