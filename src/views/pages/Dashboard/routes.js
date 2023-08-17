@@ -2,7 +2,7 @@ import Home from "@/views/pages/Dashboard/Dashboard.vue";
 
 export default [
     {
-      path: '/dashboard',
+      path: '/',
       name: 'dashboard',
       component: Home,
       meta: {

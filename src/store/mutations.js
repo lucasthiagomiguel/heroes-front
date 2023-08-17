@@ -10,10 +10,9 @@ export default{
     [types.SET_AUTHENTICATED](state,payload){
         state.authenticated = payload 
     },
-    [types.SET_QUESTIONAVALIATION](state,payload){
-        state.questionAvaliation = payload 
+    [types.SET_HEROES](state,payload){
+        state.heroes = payload 
     },
-    [types.SET_ANSWERS](state,payload){
-        state.answers = payload 
-    }
+    
+    
 }

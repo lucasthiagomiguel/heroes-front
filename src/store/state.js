@@ -1,7 +1,6 @@
 export default {
     user:{},
     token:'',
-    authenticated: false,
-    questionAvaliation:{},
-    answers:{}
+    authenticated: true,
+    heroes:''
 }

@@ -2,7 +2,7 @@ import Login from '@/views/Pages/Auth/Login.vue'
 
 export default [
     {
-      path: '/',
+      path: '/login',
       name: 'login',
       component: Login,
       meta: {
