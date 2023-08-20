@@ -1,6 +1,6 @@
 import * as types from './mutation-types';
 import axios  from '@/axios';
-import * as storage from './storage';
+import * as storage from '../../storage';
 import router from '@/router';
 
 export const ActionSetLogin = ({dispatch},payload) =>{
@@ -18,24 +18,7 @@ export const ActionSetLogin = ({dispatch},payload) =>{
     })
 }
 
-export const ActionDelete = ({dispatch},payload) =>{
-    return  axios.delete(`/knights/${payload}`).then(({data})=>{
-        console.log(payload);
-     dispatch('GetHeroes');
-     }).catch((error)=>{
-         dispatch('ActionAuthenticated',false)
-         console.log(error);
-     })
- }
 
-export const GetHeroes = ({dispatch},payload) =>{
-    return  axios.get('/knights').then(({data})=>{
-        dispatch('ActionSetHeroes',data);
-        }).catch((error)=>{
-            console.log(error);
-        })
-}
-    
 
 
 export const ActionSetUser = ({commit},payload) =>{
@@ -51,12 +34,6 @@ export const ActionSetToken = ({commit},payload) =>{
     commit(types.SET_TOKEN,payload)
 }
 
-
-
-export const ActionSetHeroes = ({commit},payload) =>{
-    commit(types.SET_HEROES,payload)
-    
-}
 export const ActionSingOut = ({dispatch}) => {
     storage.setHeaderToken('');
     storage.deleteLocalToken();

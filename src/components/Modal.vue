@@ -36,10 +36,12 @@ export default {
         idHeroes: String
     },
     methods:{
-        ...mapActions('auth',['ActionDelete']),
+        ...mapActions('heroes',['ActionDelete']),
         deleteUsers(e){ 
             // console.log(this.ActionDelete(this.idHeroes))
             this.ActionDelete(this.idHeroes)
+            this.closeModal()
+
         },
         closeModal(){
             this.$emit('close', false)

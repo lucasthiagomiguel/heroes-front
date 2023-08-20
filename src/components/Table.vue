@@ -74,7 +74,10 @@ export default {
     }
   },
   props: {    
-    dados: Object,
+    dados:{
+        type:Object,
+            default: ['teste']
+        },
         
   },
   mounted() {
