@@ -4,5 +4,5 @@ export  const heroes = (state) =>{
 }
 
 export  const modal = (state) =>{
-    return state.modal
+    return state.modalShow
 }

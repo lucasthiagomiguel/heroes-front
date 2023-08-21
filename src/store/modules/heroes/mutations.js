@@ -5,7 +5,7 @@ export default{
         state.heroes = payload 
     },
     [types.SET_MODAL](state,payload){
-        state.modal = payload 
+        [state.modalShow] = payload 
     },
     
     

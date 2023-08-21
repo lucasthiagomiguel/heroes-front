@@ -1,4 +1,5 @@
 export default {
     heroes:[],
-    modal:false
+    modalShow:false,
+    menssagemModal:""
 }

@@ -24,9 +24,9 @@ export const ActionDelete = ({dispatch},payload) =>{
     return  axios.post('/knights',payload).then(({data})=>{
         console.log('action',payload)
         dispatch('GetHeroes');
-        console.log(data)
+        
      }).catch((error)=>{
-         
+        dispatch('ActionSetModal',true);
          console.log(error);
      })
  }
