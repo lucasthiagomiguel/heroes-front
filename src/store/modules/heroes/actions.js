@@ -20,6 +20,17 @@ export const ActionDelete = ({dispatch},payload) =>{
      })
  }
 
+ export const ActionCreate = ({dispatch},payload) =>{
+    return  axios.post('/knights',payload).then(({data})=>{
+        console.log('action',payload)
+        dispatch('GetHeroes');
+        console.log(data)
+     }).catch((error)=>{
+         
+         console.log(error);
+     })
+ }
+
 export const GetHeroes = ({dispatch},payload) =>{
     return  axios.get('/knights').then(({data})=>{
         dispatch('ActionSetHeroes',data);
